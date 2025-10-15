@@ -111,7 +111,7 @@ while True:
             else:
                 print(" Parabéns! Seu IMC está na faixa Normal (Bem-Estar).")
 
-            print("Para uma recomendação de dieta e treino, escolha seu objetivo:")
+            print("\nPara uma recomendação de dieta e treino, escolha seu objetivo:")
             print("1. Ganhar massa")
             print("2. Secar (perder gordura)")
             objetivo = input("Escolha 1 ou 2: ")
@@ -146,5 +146,6 @@ while True:
 
     else:
         print(" Opção inválida. Por favor, tente novamente.")
+
 
 
