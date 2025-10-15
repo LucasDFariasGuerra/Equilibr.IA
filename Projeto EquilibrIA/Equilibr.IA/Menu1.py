@@ -1,6 +1,5 @@
 usuarios = {}
 
-# O laço principal que mantém o programa rodando.
 while True:
     print("BEM-VINDO AO Equilibr.IA")
     print("=========================")
@@ -98,11 +97,11 @@ while True:
             else: 
                 tmb = (10 * peso) + (6.25 * altura_cm) - (5 * idade) - 161
             
-            print("\n--- SEUS RESULTADOS ---")
+            print(" SEUS RESULTADOS ")
             print(f"Seu IMC é: {imc:.2f}")
             print(f"Sua Taxa Metabólica Basal (TMB) é: {tmb:.0f} kcal por dia.")
 
-            print("\n--- RECOMENDAÇÕES ---")
+            print(" RECOMENDAÇÕES ")
             if imc >= 30.0:
                 print(" Alerta: Seu IMC indica Obesidade. Busque ajuda profissional.")
             elif imc >= 25.0:
@@ -112,7 +111,7 @@ while True:
             else:
                 print(" Parabéns! Seu IMC está na faixa Normal (Bem-Estar).")
 
-            print("\nPara uma recomendação de dieta e treino, escolha seu objetivo:")
+            print("Para uma recomendação de dieta e treino, escolha seu objetivo:")
             print("1. Ganhar massa")
             print("2. Secar (perder gordura)")
             objetivo = input("Escolha 1 ou 2: ")
@@ -128,7 +127,7 @@ while True:
             print(" Usuário ou senha incorretos.")
 
     elif escolha == '3':
-        print("\n--- EXCLUIR PERFIL ---")
+        print(" EXCLUIR PERFIL ")
         username = input("Digite o nome de usuário que deseja excluir: ").strip()
         
         if username in usuarios:
@@ -142,9 +141,10 @@ while True:
             print(" Usuário não encontrado.")
 
     elif escolha == '0':
-        print("\nObrigado por usar o Equilibr.IA! Saindo...")
+        print("Obrigado por usar o Equilibr.IA! Saindo...")
         break
 
     else:
         print(" Opção inválida. Por favor, tente novamente.")
+
 
